@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Asteroid_2._0.Asteroid" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>GameStuff\GameObjects\Asteroid\Asteroid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.GameObject" Collapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAUAAAQAAAAAAgAAAACAICACEAAAQwCAAQAAAAAAAAA=</HashCode>
+      <FileName>GameStuff\GameObjects\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Bullet" Collapsed="true">
+    <Position X="9.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameStuff\GameObjects\Projectiles\Bullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Laser" Collapsed="true">
+    <Position X="11.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameStuff\GameObjects\Projectiles\Laser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Projectile" Collapsed="true">
+    <Position X="10.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameStuff\GameObjects\Projectiles\Projectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.FatherShip" Collapsed="true">
+    <Position X="5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameStuff\GameObjects\Ships\FatherShip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.MotherShip" Collapsed="true">
+    <Position X="2.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameStuff\GameObjects\Ships\MotherShip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Ship" Collapsed="true">
+    <Position X="3.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameStuff\GameObjects\Ships\Ship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Cannon" Collapsed="true">
+    <Position X="7.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAIAAAAAA=</HashCode>
+      <FileName>GameStuff\GameObjects\Weapons\Cannon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Weapon" Collapsed="true">
+    <Position X="7.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameStuff\GameObjects\Weapons\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.AsteroidManager" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgAAAAAAgQIRAgAAIAAAAAAAAAQCAQgAQAAAAA=</HashCode>
+      <FileName>GameStuff\Managers\Entities\AsteroidManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.CollisionManager" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAACAABAAAABAAQAQAAA=</HashCode>
+      <FileName>GameStuff\Managers\Entities\CollisionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Factory" Collapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQBAAAAAAAAAAAAAAAAAgABAAQAAAAA=</HashCode>
+      <FileName>GameStuff\Managers\Entities\Factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.ShipManager" Collapsed="true">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAAIACAgQQQAAAAAAACgAEAAAAgARAAAAAAAA=</HashCode>
+      <FileName>GameStuff\Managers\Entities\ShipManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.AsteroidGame" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAEAAAAA=</HashCode>
+      <FileName>GameStuff\Managers\GameManaging\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.HUD" Collapsed="true">
+    <Position X="17.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAsAAAAAAAAAAgAAAAAAAAAAAAAAAgAAEAAAAAAAIQA=</HashCode>
+      <FileName>GameStuff\Managers\GameManaging\HUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Input" Collapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABYAAAAAAAAAAABAAAAAQAgAAAAIAiAAAAAIAAACQBA=</HashCode>
+      <FileName>GameStuff\Managers\GameManaging\Input.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Explosion" Collapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQBAAAAAAAAEgAAAAAAIAAAAAAAQgAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameStuff\Visuals\Explosion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.ExplosionManager" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgAAAAAAAAgAAACAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameStuff\Visuals\Explosion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Particle" Collapsed="true">
+    <Position X="16" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAAAAAggAgAAAAAAABAAAAAAAAAEYAgAAEAAQ=</HashCode>
+      <FileName>GameStuff\Visuals\Particle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.ParticleEngine" Collapsed="true">
+    <Position X="17.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAEAAAgAAEAgAAAAAAAAAAAAAAAQAAAACAgA=</HashCode>
+      <FileName>GameStuff\Visuals\ParticleEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Textures" Collapsed="true">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIAEAAIAgAAAAAEAAAAgQAAAAAAAAAAABAAhQAAAAQ=</HashCode>
+      <FileName>GameStuff\Visuals\TextureManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.BackgroundScreen" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAEAAAAAAAgAAEAAAAAAAAAAAAAAAAAgAAAAAAIQ=</HashCode>
+      <FileName>Menus\BackgroundScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.MainMenu" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAABAAAAAAAAAAAAAAAAAAAAAAAAIAQ=</HashCode>
+      <FileName>Menus\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.MenuEntry" Collapsed="true">
+    <Position X="14.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAYAAEAAAAAAAgAgAAAAJABABAAAAAAIAAAACEQAAAI=</HashCode>
+      <FileName>Menus\MenuEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.MenuScreen" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQQAACGACAAAAgAAAAAAgAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Menus\MenuScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Options" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAACAAAAAAAAAAAAAAAAAAEAAAAAgAAAAAQ=</HashCode>
+      <FileName>Menus\Options.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.PausMenu" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAEAAAAAAAEAAAgAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Menus\PausMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.ResolutionMenu" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAJACAAAAIEAAAAAAAAEFCIADAACAEAQ=</HashCode>
+      <FileName>Menus\ResolutionMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Program" Collapsed="true">
+    <Position X="19.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.GameScreen" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAgEgAAAACigAIAggAAAAAAAAAAkABEAJAAQAIAIQ=</HashCode>
+      <FileName>Screens\GameScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.Screen" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAEACAAARAAgAEEAIAgAAADIAAAA4AAgAGAEYIBAQ=</HashCode>
+      <FileName>Screens\Screen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid_2._0.ScreenManager" Collapsed="true">
+    <Position X="14.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAEEAAAAAAAwAAAAAAAAAACAAAiAgERAAAAAACCAQ=</HashCode>
+      <FileName>Screens\ScreenManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Asteroid_2._0.ScreenState" Collapsed="true">
+    <Position X="14.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAgAAAIAAAEAAA=</HashCode>
+      <FileName>Screens\Screen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

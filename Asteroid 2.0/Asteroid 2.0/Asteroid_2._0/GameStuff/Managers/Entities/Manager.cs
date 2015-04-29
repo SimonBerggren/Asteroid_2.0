@@ -1,0 +1,38 @@
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Asteroid_2._0
+{
+    abstract class Manager
+    {
+        protected List<Projectile> projectiles { get; private set; }
+        protected ExplosionManager explosions { get; private set; }
+        protected List<Asteroid> asteroids { get; private set; }
+        protected TextureManager textures { get; private set; }
+        protected int windowHeight { get; private set; }
+        protected int windowWidth { get; private set; }
+        protected Random random { get; private set; }
+        protected Ship ship { get; private set; }
+        protected HUD hud { get; private set; }
+
+        protected void Initialize(Factory parent)
+        {
+            asteroids = parent.Asteroids;
+            projectiles = parent.Projectiles;
+            ship = parent.Ship;
+
+            hud = parent.HUD;
+            textures = parent.Textures;
+            explosions = parent.Explosions;
+
+            windowWidth = parent.WindowWidth;
+            windowHeight = parent.WindowHeight;
+
+            random = new Random();
+        }
+    }
+}

@@ -1,0 +1,61 @@
+c:\users\simon\documents\visual studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Asteroid_2._0.exe
+c:\users\simon\documents\visual studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Asteroid_2._0.pdb
+c:\users\simon\documents\visual studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Asteroid_2._0.csprojResolveAssemblyReference.cache
+c:\users\simon\documents\visual studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\simon\documents\visual studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Asteroid_2._0.exe
+c:\users\simon\documents\visual studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Asteroid_2._0.pdb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\spritefont.xnb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\gradient.xnb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\gamefont.xnb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\menufont.xnb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\MotherShip.xnb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Bullet.xnb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\FatherShip.xnb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\RedFire.xnb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\YellowFire.xnb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Laser.xnb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Asteroid.xnb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Background.xnb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Cannon.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Asteroid_2._0.exe
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Asteroid_2._0.pdb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Asteroid_2._0.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Asteroid_2._0.exe
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Asteroid_2._0.pdb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Asteroid.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\MotherShip.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Bullet.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\FatherShip.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\RedFire.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\YellowFire.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Laser.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\gradient.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Background.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Cannon.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Explosion.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\blank.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\spritefont.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\gamefont.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\menufont.xnb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Asteroid_2._0.exe
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Asteroid_2._0.pdb
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Asteroid_2._0.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Asteroid_2._0.exe
+C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Asteroid_2._0.pdb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Asteroid.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\MotherShip.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Bullet.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\FatherShip.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\RedFire.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\YellowFire.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Laser.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\gradient.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Background.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Cannon.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Explosion.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\blank.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\spritefont.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\gamefont.xnb
+C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\menufont.xnb
