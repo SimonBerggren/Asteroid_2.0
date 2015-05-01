@@ -10,6 +10,7 @@ using System.Threading;
 
 namespace Asteroid_2._0
 {
+    public delegate void GameOver(string WonOrLost);
     public class GameScreen : Screen
     {
         public int WindowWidth { get; private set; }
@@ -60,6 +61,12 @@ namespace Asteroid_2._0
 
             spriteBatch.End();
             base.Draw(gameTime);
+        }
+
+        public void Game_Over(string WonOrLost)
+        {
+            IsExiting = true;
+            ScreenManager.AddScreen(new GameOverMenu(WonOrLost, factory.HUD.killCount));
         }
     }
 }

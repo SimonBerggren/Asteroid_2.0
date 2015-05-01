@@ -75,6 +75,7 @@
     <Compile Include="GameStuff\GameObjects\PowerUp\PowerUp.cs" />
     <Compile Include="GameStuff\GameObjects\Projectiles\Missile.cs" />
     <Compile Include="GameStuff\Managers\Entities\Factory.cs" />
+    <Compile Include="GameStuff\Managers\Entities\GameOverManager.cs" />
     <Compile Include="GameStuff\Managers\Entities\Manager.cs" />
     <Compile Include="GameStuff\Managers\Entities\PowerUpManager.cs" />
     <Compile Include="GameStuff\Managers\Entities\ProjectileManager.cs" />
@@ -83,9 +84,13 @@
     <Compile Include="GameStuff\Managers\Entities\AsteroidManager.cs" />
     <Compile Include="GameStuff\Managers\Entities\CollisionManager.cs" />
     <Compile Include="GameStuff\Managers\GameManaging\Input.cs" />
-    <Compile Include="Menus\LoseMenu.cs" />
+    <Compile Include="Menus\GameOver\GameOverMenu.cs" />
+    <Compile Include="Menus\GameOver\LoseMenu.cs" />
+    <Compile Include="Menus\HighScore.cs" />
+    <Compile Include="Menus\HighScoreMenu.cs" />
     <Compile Include="Menus\Options\Sound\MusicVolumeControl.cs" />
     <Compile Include="Menus\Options\Sound\SoundControlMenu.cs" />
+    <Compile Include="Menus\GameOver\WinMenu.cs" />
     <Compile Include="Screens\BackgroundScreen.cs" />
     <Compile Include="Menus\MainMenu.cs" />
     <Compile Include="Menus\MenuEntry.cs" />

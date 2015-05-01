@@ -10,18 +10,17 @@ namespace Asteroid_2._0
 {
     class AsteroidManager : Manager
     {
-        Timer difficultyTimer = new Timer(5000);
-        Timer timer = new Timer(2000);
+
         private int asteroidSpawnCount = 0;
 
         public AsteroidManager(Factory parent)
         {
             Initialize(parent);
 
-            timer.Start();
+            asteroidTimer.Start();
             difficultyTimer.Start();
 
-            timer.Elapsed += SpawnAsteroid;
+            asteroidTimer.Elapsed += SpawnAsteroid;
             difficultyTimer.Elapsed += FasterSpawning;
         }
 
@@ -36,7 +35,7 @@ namespace Asteroid_2._0
                 if (asteroid.life <= 0)
                 {
                     if (asteroid.type == Type.Big)
-                        AsteroidDies(asteroid);
+                        SpawnSmallAsteroids(asteroid.position);
 
                     asteroids.Remove(asteroid);
                     explosions.Explode(asteroid.position);
@@ -57,8 +56,8 @@ namespace Asteroid_2._0
 
         private void FasterSpawning(Object source, ElapsedEventArgs e)
         {
-            if (timer.Interval > 300)
-                timer.Interval -= 100;
+            if (asteroidTimer.Interval > 300)
+                asteroidTimer.Interval -= 100;
         }
 
         private void SpawnAsteroid(Object source, ElapsedEventArgs e)
@@ -71,12 +70,12 @@ namespace Asteroid_2._0
             asteroidSpawnCount++;
         }
 
-        private void AsteroidDies(Asteroid Asteroid)
+        private void SpawnSmallAsteroids(Vector2 Position)
         {
 
             for (int i = 0; i < 5; i++)
             {
-                asteroids.Add(new Asteroid(textures.asteroid, Asteroid.position, random.Next(-5, 5), random.Next(1, 5), random.Next(5), Type.Normal));
+                asteroids.Add(new Asteroid(textures.asteroid, Position, random.Next(-5, 5), random.Next(1, 5), random.Next(5), Type.Normal));
             }
         }
 
@@ -92,12 +91,12 @@ namespace Asteroid_2._0
         {
             if (!Paused)
             {
-                timer.Start();
+                asteroidTimer.Start();
                 difficultyTimer.Start();
             }
             else
             {
-                timer.Stop();
+                asteroidTimer.Stop();
                 difficultyTimer.Stop();
             }
         }

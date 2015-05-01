@@ -15,9 +15,12 @@ namespace Asteroid_2._0
 
         private Action powerUp { get; set; }
 
+        private Vector2 respawnPosition;
+
         public Ship(Texture2D Texture, Vector2 Position)
         {
             Initialize(Texture, Position);
+            respawnPosition = Position;
 
             life = 3;
         }
@@ -41,6 +44,12 @@ namespace Asteroid_2._0
             if (powerUp != null)
                 powerUp();
             powerUp = null;
+        }
+
+        public void Respawn()
+        {
+            position = respawnPosition;
+            IsDead = false;
         }
     }
 }

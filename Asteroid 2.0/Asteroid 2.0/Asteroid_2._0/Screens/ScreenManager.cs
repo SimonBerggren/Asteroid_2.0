@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Content;
 
 namespace Asteroid_2._0
 {
+
     public class ScreenManager : DrawableGameComponent
     {
         private List<Screen> screens = new List<Screen>();

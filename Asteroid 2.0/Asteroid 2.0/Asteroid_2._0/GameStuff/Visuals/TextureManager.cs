@@ -10,7 +10,6 @@ namespace Asteroid_2._0
 {
     public class TextureManager
     {
-
         public TextureManager(Game Game)
         {
             Initialize(Game);

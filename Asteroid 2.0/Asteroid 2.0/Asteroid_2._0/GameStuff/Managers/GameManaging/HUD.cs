@@ -13,23 +13,27 @@ namespace Asteroid_2._0
         private string lifeText, killCountText;
         private Texture2D texture;
         private SpriteFont font;
-        public short life, killCount;
+        public int life, killCount;
         private float offsetY;
         private float offsetX;
+
+        Ship player;
 
         public HUD(Factory parent)
         {
             texture = parent.Textures.hud;
             font = parent.Textures.font;
 
-            life = 3;
+            player = parent.Ship;
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
+            life = player.life;
+
             lifeText = "Life: " + life.ToString();
             killCountText = "Kills: " + killCount.ToString();
-
+            
             offsetX = 10;
             offsetY = font.MeasureString(lifeText).Y + 5;
 

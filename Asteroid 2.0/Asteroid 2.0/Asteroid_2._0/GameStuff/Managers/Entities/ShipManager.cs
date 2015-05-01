@@ -22,12 +22,6 @@ namespace Asteroid_2._0
 
         public void Update(GameTime gameTime)
         {
-            if (ship.life <= 0 && !ship.IsDead)
-            {
-                explosions.Explode(ship.position);
-                ship.IsDead = true;
-            }
-
             if (ship.IsDead)
                 return;
 

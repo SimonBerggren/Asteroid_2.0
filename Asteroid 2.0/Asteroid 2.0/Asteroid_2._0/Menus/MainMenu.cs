@@ -15,17 +15,25 @@ namespace Asteroid_2._0
         {
             MenuEntry playGame = new MenuEntry("Play Game");
             MenuEntry options = new MenuEntry("Options");
+            MenuEntry highScores = new MenuEntry("HighScores");
             MenuEntry exit = new MenuEntry("Exit Game");
 
-            options.Selected += OptionsSelected;
             playGame.Selected += PlayGame;
+            options.Selected += OptionsSelected;
+            highScores.Selected += HighScores;
             exit.Selected += ExitGame;
 
             MenuEntries.Add(playGame);
             MenuEntries.Add(options);
+            MenuEntries.Add(highScores);
             MenuEntries.Add(exit);
 
             MediaPlayer.Play(Sound.MenuMusic);
+        }
+
+        void HighScores(object sender, EventArgs e)
+        {
+            ScreenManager.AddScreen(new HighScoreMenu());
         }
 
         void OptionsSelected(object sender, EventArgs e)

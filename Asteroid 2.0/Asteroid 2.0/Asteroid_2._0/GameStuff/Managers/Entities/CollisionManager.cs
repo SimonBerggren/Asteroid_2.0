@@ -63,7 +63,9 @@ namespace Asteroid_2._0
                 if (ReallyIsColliding(asteroid.matrix, asteroid.texture.Width, asteroid.texture.Height, asteroid.colorArray,
                                     ship.matrix, ship.texture.Width, ship.texture.Height, ship.colorArray))
                 {
-                    ship.life -= ship.life;
+                    ship.life--;
+                    ship.IsDead = true;
+                    explosions.Explode(ship.position);
                     asteroid.life -= asteroid.life;
                 }
             }

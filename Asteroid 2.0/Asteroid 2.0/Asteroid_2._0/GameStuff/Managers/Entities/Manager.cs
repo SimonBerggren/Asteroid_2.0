@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Timers;
 
 namespace Asteroid_2._0
 {
@@ -19,6 +20,10 @@ namespace Asteroid_2._0
         protected Random random { get; private set; }
         protected Ship ship { get; private set; }
         protected HUD hud { get; private set; }
+        protected GameOver gameOver { get; private set; }
+
+        protected Timer difficultyTimer;
+        protected Timer asteroidTimer;
 
         protected void Initialize(Factory parent)
         {
@@ -34,7 +39,11 @@ namespace Asteroid_2._0
             windowWidth = parent.WindowWidth;
             windowHeight = parent.WindowHeight;
 
+            gameOver = parent.GameOver;
+
             random = new Random();
+            difficultyTimer = new Timer(5000);
+            asteroidTimer = new Timer(2000);
         }
 
         public void GetViewPort(Viewport viewport)

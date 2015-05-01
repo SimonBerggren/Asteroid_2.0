@@ -10,13 +10,14 @@ namespace Asteroid_2._0
 {
     public class Factory
     {
+        public Ship Ship { get; set; }
         public List<Projectile> Projectiles { get; private set; }
         public List<Asteroid> Asteroids { get; private set; }
         public List<PowerUp> PowerUps { get; private set; }
         public TextureManager Textures { get; private set; }
         public ExplosionManager Explosions { get; private set; }
-        public Ship Ship { get; private set; }
         public HUD HUD { get; private set; }
+        public GameOver GameOver { get; private set; }
 
         public int WindowWidth { get; private set; }
         public int WindowHeight { get; private set; }
@@ -26,6 +27,7 @@ namespace Asteroid_2._0
         private CollisionManager Collision_Manager { get; set; }
         private PowerUpManager PowerUp_Manager { get; set; }
         private ProjectileManager Projectile_Manager { get; set; }
+        private GameOverManager GameOver_Manager { get; set; }
 
 
         public Factory() { }
@@ -37,20 +39,23 @@ namespace Asteroid_2._0
 
             Textures = new TextureManager(parent.ScreenManager.Game);
 
+            GameOver = new GameOver(parent.Game_Over);
+            Ship = new Ship(Textures.mothership, new Vector2(WindowWidth - Textures.mothership.Width / 2,
+                                                             WindowHeight - Textures.mothership.Height / 2));
+
             Asteroids = new List<Asteroid>();
             Projectiles = new List<Projectile>();
             PowerUps = new List<PowerUp>();
+
             Explosions = new ExplosionManager(this);
             HUD = new HUD(this);
-
-            Ship = new Ship(Textures.mothership, new Vector2(WindowWidth - Textures.mothership.Width / 2,
-                                                                   WindowHeight - Textures.mothership.Height / 2));
 
             Collision_Manager = new CollisionManager(this);
             Asteroid_Manager = new AsteroidManager(this);
             Ship_Manager = new ShipManager(this);
             PowerUp_Manager = new PowerUpManager(this);
             Projectile_Manager = new ProjectileManager(this);
+            GameOver_Manager = new GameOverManager(this);
 
         }
 
@@ -67,6 +72,7 @@ namespace Asteroid_2._0
             Projectile_Manager.Update(gameTime);
             PowerUp_Manager.Update(gameTime);
             Explosions.Update(gameTime);
+            GameOver_Manager.Update(gameTime);
         }
 
         public void GetViewPort(Viewport viewPort)
