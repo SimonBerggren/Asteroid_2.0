@@ -1,17 +1,15 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework.Media;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace Asteroid_2._0
 {
-    class MainMenu:MenuScreen
+    class MainMenu : MenuScreen
     {
         public MainMenu()
-            : base("Main Menu")
-        {
-
-        }
+            : base("Main Menu") { }
 
         public override void LoadContent()
         {
@@ -26,6 +24,8 @@ namespace Asteroid_2._0
             MenuEntries.Add(playGame);
             MenuEntries.Add(options);
             MenuEntries.Add(exit);
+
+            MediaPlayer.Play(Sound.MenuMusic);
         }
 
         void OptionsSelected(object sender, EventArgs e)

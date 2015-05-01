@@ -12,6 +12,7 @@ namespace Asteroid_2._0
     {
         Timer difficultyTimer = new Timer(5000);
         Timer timer = new Timer(2000);
+        private int asteroidSpawnCount = 0;
 
         public AsteroidManager(Factory parent)
         {
@@ -34,6 +35,9 @@ namespace Asteroid_2._0
 
                 if (asteroid.life <= 0)
                 {
+                    if (asteroid.type == Type.Big)
+                        AsteroidDies(asteroid);
+
                     asteroids.Remove(asteroid);
                     explosions.Explode(asteroid.position);
                     hud.killCount++;
@@ -59,13 +63,29 @@ namespace Asteroid_2._0
 
         private void SpawnAsteroid(Object source, ElapsedEventArgs e)
         {
-            asteroids.Add(new Asteroid(textures.asteroid, new Vector2(random.Next(50, windowWidth - 50), 50), random.Next(-5, 5), random.Next(1, 5), random.Next(5)));
+            if (asteroidSpawnCount == 5 || asteroidSpawnCount == 10 || asteroidSpawnCount == 15 || asteroidSpawnCount == 20)
+            asteroids.Add(new Asteroid(textures.asteroid, new Vector2(random.Next(50, windowWidth - 50), 50), random.Next(-5, 5), random.Next(1, 5), random.Next(5), Type.Big));
+            else
+                asteroids.Add(new Asteroid(textures.asteroid, new Vector2(random.Next(50, windowWidth - 50), 50), random.Next(-5, 5), random.Next(1, 5), random.Next(5), Type.Normal));
+
+            asteroidSpawnCount++;
+        }
+
+        private void AsteroidDies(Asteroid Asteroid)
+        {
+
+            for (int i = 0; i < 5; i++)
+            {
+                asteroids.Add(new Asteroid(textures.asteroid, Asteroid.position, random.Next(-5, 5), random.Next(1, 5), random.Next(5), Type.Normal));
+            }
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
             for (int a = 0; a < asteroids.Count; a++)
+            {
                 asteroids[a].Draw(spriteBatch);
+            }
         }
 
         public void HandleTime(bool Paused)

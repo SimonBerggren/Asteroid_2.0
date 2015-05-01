@@ -12,17 +12,20 @@ namespace Asteroid_2._0
         public Rectangle hitbox { get; protected set; }
         public Texture2D texture { get; protected set; }
         public Vector2 origin { get; protected set; }
-        protected Rectangle sourceRec { get; set; }
         public Vector2 position { get; protected set; }
         protected Color color { get; set; }
         protected float scale { get; set; }
         public float rotation { get; set; }
         protected SpriteEffects spriteEffects { get; set; }
-        public Vector2 speed;
         public int life { get; set; }
         public Matrix matrix { get; protected set; }
 
         public Color[] colorArray { get; protected set; }
+
+        public Vector2 speed;
+
+        protected Rectangle sourceRec;
+
 
         public virtual void Update(GameTime gameTime)
         {
@@ -38,10 +41,10 @@ namespace Asteroid_2._0
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, position, null, color, rotation, origin, scale, spriteEffects, 1);
+            spriteBatch.Draw(texture, position, sourceRec, color, rotation, origin, scale, spriteEffects, 1);
         }
 
-        public GameObject(Texture2D Texture, Vector2 Position)
+        protected virtual void Initialize(Texture2D Texture, Vector2 Position)
         {
             texture = Texture;
             position = Position;

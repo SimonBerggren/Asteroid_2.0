@@ -10,6 +10,7 @@ namespace Asteroid_2._0
     class PausMenu : MenuScreen
     {
         MenuEntry resume;
+        MenuEntry options;
         MenuEntry exit;
 
         GameScreen mainGame;
@@ -19,13 +20,16 @@ namespace Asteroid_2._0
         {
             mainGame = MainGame;
 
-            resume = new MenuEntry("Resume Game");
-            exit = new MenuEntry("Exit Game");
+            resume = new MenuEntry("Resume");
+            options = new MenuEntry("Options");
+            exit = new MenuEntry("Exit");
 
             resume.Selected += ResumeGame;
+            options.Selected += Options;
             exit.Selected += ExitGame;
 
             MenuEntries.Add(resume);
+            MenuEntries.Add(options);
             MenuEntries.Add(exit);
 
             IsPopup = true;
@@ -41,6 +45,11 @@ namespace Asteroid_2._0
             ScreenManager.AddScreen(new MainMenu());
             ScreenManager.RemoveScreen(mainGame);
             IsExiting = true;
+        }
+
+        private void Options(object sender, EventArgs e)
+        {
+            ScreenManager.AddScreen(new Options());
         }
     }
 }

@@ -13,6 +13,7 @@ namespace Asteroid_2._0
             : base(tex, position, isReverse, facingDirection)
         {
             life = 1;
+            projectileSpeed = 15;
         }
     }
 }

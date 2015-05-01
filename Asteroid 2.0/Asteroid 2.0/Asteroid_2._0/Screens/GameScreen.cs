@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,11 +33,18 @@ namespace Asteroid_2._0
             factory = new Factory();
 
             factory.Initialize(this);
+
+            MediaPlayer.Play(Sound.GameMusic);
         }
 
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
         {
             factory.UpdateGameScreen(gameTime, otherScreenHasFocus);
+
+            if (otherScreenHasFocus)
+                return;
+
+            factory.GetViewPort(ScreenManager.GraphicsDevice.Viewport);
 
             if (Input.Clicked(Keys.Escape))
                 ScreenManager.AddScreen(new PausMenu(this));

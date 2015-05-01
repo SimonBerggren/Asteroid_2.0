@@ -10,94 +10,102 @@ namespace Asteroid_2._0
 {
     class ShipManager : Manager
     {
+        private bool ableToFire = true;
+        private float timer, resettimer;
+
         public ShipManager(Factory parent)
         {
             Initialize(parent);
+            timer = 1f;
+            resettimer = 1f;
         }
 
         public void Update(GameTime gameTime)
         {
-            for (int i = 0; i < projectiles.Count; i++)
+            if (ship.life <= 0 && !ship.IsDead)
             {
-                Projectile projectile = projectiles[i];
-
-                projectile.Update(gameTime);
-
-                if (projectile.hitbox.Bottom < 0 || projectile.hitbox.Top > windowHeight ||
-                    projectile.hitbox.Right < 0 || projectile.hitbox.Left > windowWidth)
-                    projectiles.Remove(projectile);
+                explosions.Explode(ship.position);
+                ship.IsDead = true;
             }
+
+            if (ship.IsDead)
+                return;
 
             ship.Update(gameTime);
 
-            HandleInput();
-            Fire();
+            Manage_Movement();
+
+            if (ableToFire)
+                Manage_Fire();
+
+            if (!ableToFire)
+                timer -= 0.1f;
+            if (timer <= 0)
+            {
+                timer = resettimer;
+                ableToFire = true;
+            }
         }
 
-        private void HandleInput()
+        private void Manage_Movement()
         {
             float xDiff = Input.MousePoint().X - ship.position.X;
             float yDiff = Input.MousePoint().Y - ship.position.Y;
+
             Vector2 facingDirection = new Vector2(xDiff, yDiff);
             facingDirection.Normalize();
+
             ship.rotation = (float)Math.Atan2(yDiff, xDiff);
             float distance = Vector2.Distance(ship.position, Input.MousePosition());
 
-            ship.speedX = facingDirection.X * (distance / 20);
-            ship.speedY = facingDirection.Y * (distance / 20);
+            ship.speedX = facingDirection.X * (distance / 50);
+            ship.speedY = facingDirection.Y * (distance / 50);
         }
 
-        private void Fire()
+        private void Manage_Fire()
         {
-            if (Input.LeftClick())
+            if (Input.HoldingLeft())
             {
-                switch (ship.type)
-                {
-                    case Ship.Type.mother:
-                        projectiles.Add(new Bullet(textures.bullet, ship.position));
-                        break;
-                    case Ship.Type.father:
-                        projectiles.Add(new Laser(textures.laser, ship.position));
-                        break;
-                }
+                projectiles.Add(new Bullet(textures.bullet, ship.position));
+                ableToFire = false;
             }
 
-            if (Input.RightClick())
+            if (Input.HoldingRight())
             {
-                switch (ship.type)
-                {
-                    case Ship.Type.mother:
-                        projectiles.Add(new Bullet(textures.bullet, ship.position, true));
-                        break;
-                    case Ship.Type.father:
-                        projectiles.Add(new Laser(textures.laser, ship.position, true));
-                        break;
-                }
+                projectiles.Add(new Bullet(textures.bullet, ship.position, true));
+                ableToFire = false;
             }
 
             if (Input.Clicked(Keys.Space))
-                Cheat();
+                Fire_Missile();
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            foreach (Projectile B in projectiles)
-                B.Draw(spriteBatch);
-
+            if(!ship.IsDead)
             ship.Draw(spriteBatch);
         }
 
-        private void Cheat()
+        private void Fire_Missile()
         {
-            for (int i = 0; i < 100; i++)
-            {
-                Vector2 velocity = new Vector2(
-                    3f * (float)(random.NextDouble() * 2 - 1),
-                    3f * (float)(random.NextDouble() * 2 - 1));
-                velocity = Vector2.Normalize(velocity) * (float)(random.NextDouble() * 3);
+            if (asteroids.Count <= 0)
+                return;
 
-                projectiles.Add(new Bullet(textures.bullet, ship.position, false, velocity));
+            List<Asteroid> TempList = asteroids;
+
+            TempList.OrderBy<Asteroid, bool>
+                (asteroid => asteroid.IsTargeted).ToList<Asteroid>();
+
+            Asteroid ClosestAsteroid = TempList.OrderBy<Asteroid, float>
+                (asteroid => Vector2.Distance(asteroid.position, Input.MousePosition())).ToList<Asteroid>()[0];
+
+            if (ClosestAsteroid.IsTargeted == false)
+            {
+                projectiles.Add(new Missile(textures.laser, ship.position, ref ClosestAsteroid));
+                ClosestAsteroid.IsTargeted = true;
             }
+            else
+                return;
         }
     }
 }

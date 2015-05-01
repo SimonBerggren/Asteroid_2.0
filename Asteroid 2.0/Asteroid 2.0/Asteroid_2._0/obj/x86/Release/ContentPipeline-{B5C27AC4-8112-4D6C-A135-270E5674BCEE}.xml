@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Asteroid.png</Source>
+      <Name>Asteroid</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Asteroid.xnb</Output>
+      <Time>2015-04-30T16:09:18.882452+02:00</Time>
+    </Item>
+    <Item>
+      <Source>MotherShip.png</Source>
+      <Name>MotherShip</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\MotherShip.xnb</Output>
+      <Time>2015-04-30T15:44:01.2863837+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Bullet.png</Source>
+      <Name>Bullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Bullet.xnb</Output>
+      <Time>2015-04-29T14:24:33.7793325+02:00</Time>
+    </Item>
+    <Item>
+      <Source>FatherShip.png</Source>
+      <Name>FatherShip</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\FatherShip.xnb</Output>
+      <Time>2015-04-29T14:24:33.7823304+02:00</Time>
+    </Item>
+    <Item>
+      <Source>RedFire.png</Source>
+      <Name>RedFire</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\RedFire.xnb</Output>
+      <Time>2015-04-29T14:24:33.7843304+02:00</Time>
+    </Item>
+    <Item>
+      <Source>YellowFire.png</Source>
+      <Name>YellowFire</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\YellowFire.xnb</Output>
+      <Time>2015-04-29T14:24:33.7853302+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Laser.png</Source>
+      <Name>Laser</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Laser.xnb</Output>
+      <Time>2015-04-29T14:24:33.7833301+02:00</Time>
+    </Item>
+    <Item>
+      <Source>gradient.png</Source>
+      <Name>gradient</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\gradient.xnb</Output>
+      <Time>2015-04-29T14:24:33.7863305+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Background.png</Source>
+      <Name>Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Background.xnb</Output>
+      <Time>2015-04-29T14:24:33.7793325+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Cannon.png</Source>
+      <Name>Cannon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Cannon.xnb</Output>
+      <Time>2015-04-29T14:24:33.7803308+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Explosion.png</Source>
+      <Name>Explosion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Explosion.xnb</Output>
+      <Time>2015-04-29T14:24:33.7813306+02:00</Time>
+    </Item>
+    <Item>
+      <Source>blank.png</Source>
+      <Name>blank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\blank.xnb</Output>
+      <Time>2015-04-29T14:24:33.7853302+02:00</Time>
+    </Item>
+    <Item>
+      <Source>HUD.png</Source>
+      <Name>HUD</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\HUD.xnb</Output>
+      <Time>2015-04-29T18:57:23.7742645+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Power_Up1.png</Source>
+      <Name>Power_Up1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Power_Up1.xnb</Output>
+      <Time>2015-04-29T21:46:42.1751963+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Power_Up2.png</Source>
+      <Name>Power_Up2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Power_Up2.xnb</Output>
+      <Time>2015-04-29T21:46:59.6290716+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Power_Up3.png</Source>
+      <Name>Power_Up3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Power_Up3.xnb</Output>
+      <Time>2015-04-29T21:47:05.1304837+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Power_Up4.png</Source>
+      <Name>Power_Up4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Power_Up4.xnb</Output>
+      <Time>2015-04-29T21:47:10.3408817+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Power_Up5.png</Source>
+      <Name>Power_Up5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Power_Up5.xnb</Output>
+      <Time>2015-04-29T21:47:16.0862675+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Power_Up6.png</Source>
+      <Name>Power_Up6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Power_Up6.xnb</Output>
+      <Time>2015-04-29T21:47:20.5318218+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Power_Up7.png</Source>
+      <Name>Power_Up7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Power_Up7.xnb</Output>
+      <Time>2015-04-29T21:47:24.0397144+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Power_Up8.png</Source>
+      <Name>Power_Up8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Power_Up8.xnb</Output>
+      <Time>2015-04-29T21:47:28.5819308+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Power_Up9.png</Source>
+      <Name>Power_Up9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\Power_Up9.xnb</Output>
+      <Time>2015-04-29T21:47:34.0083297+02:00</Time>
+    </Item>
+    <Item>
+      <Source>spritefont.spritefont</Source>
+      <Name>spritefont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\spritefont.xnb</Output>
+      <Time>2015-04-29T18:50:16.9828236+02:00</Time>
+    </Item>
+    <Item>
+      <Source>gamefont.spritefont</Source>
+      <Name>gamefont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\gamefont.xnb</Output>
+      <Time>2015-04-29T14:24:33.7863305+02:00</Time>
+    </Item>
+    <Item>
+      <Source>menufont.spritefont</Source>
+      <Name>menufont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\menufont.xnb</Output>
+      <Time>2015-04-29T14:24:33.7873312+02:00</Time>
+    </Item>
+    <Item>
+      <Source>MenuMusic.mp3</Source>
+      <Name>MenuMusic</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\MenuMusic.xnb</Output>
+      <Extra>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\MenuMusic.wma</Extra>
+      <Time>2015-04-29T22:32:25.0401697+02:00</Time>
+    </Item>
+    <Item>
+      <Source>GameMusic.mp3</Source>
+      <Name>GameMusic</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\GameMusic.xnb</Output>
+      <Extra>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\GameMusic.wma</Extra>
+      <Time>2015-04-29T22:33:32.1580124+02:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{B5C27AC4-8112-4D6C-A135-270E5674BCEE}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Release</BuildConfiguration>
+      <CompressContent>true</CompressContent>
+      <RootDirectory>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Release\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-04-29T01:38:47.9950218+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

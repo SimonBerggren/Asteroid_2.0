@@ -55,5 +55,15 @@ namespace Asteroid_2._0
         {
             return mousePosition;
         }
+
+        public static bool HoldingLeft()
+        {
+            return MS.LeftButton == ButtonState.Pressed;
+        }
+
+        public static bool HoldingRight()
+        {
+            return MS.RightButton == ButtonState.Pressed;
+        }
     }
 }

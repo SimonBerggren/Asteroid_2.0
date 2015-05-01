@@ -10,7 +10,7 @@ namespace Asteroid_2._0
 {
     abstract class MenuScreen : Screen
     {
-        private int selectedEntry = 0;
+        protected int selectedEntry = 0;
         private string menuTitle;
 
         private List<MenuEntry> menuEntries = new List<MenuEntry>();
@@ -56,7 +56,7 @@ namespace Asteroid_2._0
                     selectedEntry = 0;
             }
 
-            if (Input.Clicked(Keys.Enter) || Input.LeftClick())
+            if (Input.Clicked(Keys.Enter))
             {
                 OnSelectEntry(selectedEntry);
             }

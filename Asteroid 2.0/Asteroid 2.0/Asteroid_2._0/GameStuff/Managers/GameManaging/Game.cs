@@ -35,11 +35,5 @@ namespace Asteroid_2._0
             IsMouseVisible = true;
             base.Initialize();
         }
-
-        protected override void Update(GameTime gameTime)
-        {
-            base.Update(gameTime);
-        }
-
     }
 }

@@ -1,3 +1,4 @@
 c:\users\simon\documents\visual studio 2013\Projects\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0Content\obj\x86\Debug\Asteroid_2._0Content.contentprojResolveAssemblyReference.cache
 C:\Users\Simon\Desktop\CodeStuff\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0Content\obj\x86\Debug\Asteroid_2._0Content.contentprojResolveAssemblyReference.cache
 C:\Users\Simon\Desktop\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0Content\obj\x86\Debug\Asteroid_2._0Content.contentprojResolveAssemblyReference.cache
+C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0Content\obj\x86\Debug\Asteroid_2._0Content.contentprojResolveAssemblyReference.cache

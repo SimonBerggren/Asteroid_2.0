@@ -9,17 +9,19 @@ namespace Asteroid_2._0
 {
     public class HUD
     {
-        private Rectangle background;
+        private Rectangle background1, background2;
         private string lifeText, killCountText;
         private Texture2D texture;
         private SpriteFont font;
         public short life, killCount;
+        private float offsetY;
+        private float offsetX;
 
         public HUD(Factory parent)
         {
-            texture = parent.Textures.blankPic;
+            texture = parent.Textures.hud;
             font = parent.Textures.font;
-            background = new Rectangle(parent.WindowWidth / 2 - parent.WindowWidth / 3 / 2, parent.WindowHeight - 50, parent.WindowWidth / 3, 50);
+
             life = 3;
         }
 
@@ -28,10 +30,20 @@ namespace Asteroid_2._0
             lifeText = "Life: " + life.ToString();
             killCountText = "Kills: " + killCount.ToString();
 
-            spriteBatch.Draw(texture, background, Color.White);
+            offsetX = 10;
+            offsetY = font.MeasureString(lifeText).Y + 5;
 
-            spriteBatch.DrawString(font, lifeText, new Vector2(background.X + 10, background.Y), Color.Black);
-            spriteBatch.DrawString(font, killCountText, new Vector2(background.X + 10, background.Y + 15), Color.Black);
+            int width = (int)(font.MeasureString(lifeText).X + offsetX);
+            int height = (int)font.MeasureString(lifeText).Y;
+
+            background1 = new Rectangle(0, 0, width, height);
+            background2 = new Rectangle(0, height, width, height);
+
+            spriteBatch.Draw(texture, background1, Color.White);
+            spriteBatch.Draw(texture, background2, Color.White);
+
+            spriteBatch.DrawString(font, lifeText, new Vector2(background1.X + offsetX / 2, background1.Y), Color.Red);
+            spriteBatch.DrawString(font, killCountText, new Vector2(background1.X + offsetX / 2, background1.Y + offsetY), Color.Red);
         }
     }
 }

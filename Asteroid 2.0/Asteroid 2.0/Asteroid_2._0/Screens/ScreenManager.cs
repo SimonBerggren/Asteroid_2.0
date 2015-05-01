@@ -17,6 +17,7 @@ namespace Asteroid_2._0
 
         private SpriteBatch spriteBatch;
         private GraphicsDeviceManager graphics;
+        private SpriteFont font;
 
         public GraphicsDeviceManager Graphics
         {
@@ -28,7 +29,6 @@ namespace Asteroid_2._0
             get { return spriteBatch; }
         }
 
-        private SpriteFont font;
         public SpriteFont Font
         {
             get { return font; }
@@ -48,11 +48,12 @@ namespace Asteroid_2._0
 
         protected override void LoadContent()
         {
-            ContentManager content = Game.Content;
+            ContentManager Content = Game.Content;
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            font = content.Load<SpriteFont>(@"menufont");
-            
+            font = Content.Load<SpriteFont>(@"menufont");
+            Sound.LoadContent(Content);
+
             foreach (Screen screen in screens)
             {
                 screen.LoadContent();
@@ -130,7 +131,7 @@ namespace Asteroid_2._0
         {
             screen.ScreenManager = this;
             screen.IsExiting = false;
-
+            
             if (isInitialized)
                 screen.LoadContent();
 

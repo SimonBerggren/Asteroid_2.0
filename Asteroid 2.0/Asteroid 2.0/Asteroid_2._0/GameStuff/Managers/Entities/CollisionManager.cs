@@ -16,33 +16,60 @@ namespace Asteroid_2._0
 
         public void Update(GameTime gameTime)
         {
-            BulletAsteroidCollisions();
+            Asteroid_Collisions();
+            Ship_PowerUp_Collisions();
         }
 
-        private void BulletAsteroidCollisions()
+        private void Asteroid_Collisions()
         {
             for (int a = 0; a < asteroids.Count; a++)
             {
+                Asteroid asteroid = asteroids[a];
+                Ship_Asteroid_Collision(ref asteroid);
+
                 for (int p = 0; p < projectiles.Count; p++)
                 {
-                    Asteroid asteroid = asteroids[a];
                     Projectile projectile = projectiles[p];
+
 
                     if (asteroid.hitbox.Intersects(projectile.hitbox))
                     {
-                        if (IntersectPixels(asteroid.matrix, asteroid.texture.Width, asteroid.texture.Height, asteroid.colorArray,
+                        if (ReallyIsColliding(asteroid.matrix, asteroid.texture.Width, asteroid.texture.Height, asteroid.colorArray,
                                             projectile.matrix, projectile.texture.Width, projectile.texture.Height, projectile.colorArray))
                         {
                             asteroid.life -= projectile.life;
                             projectile.life -= projectile.life;
-                            break;
                         }
                     }
                 }
             }
         }
 
-        private bool IntersectPixels(Matrix transformA, int widthA, int heightA, Color[] dataA,
+        private void Ship_PowerUp_Collisions()
+        {
+            for (int p = 0; p < powerups.Count; p++)
+            {
+                PowerUp powerup = powerups[p];
+
+                if (powerup.hitbox.Intersects(ship.hitbox))
+                    powerup.life -= powerup.life;
+            }
+        }
+
+        private void Ship_Asteroid_Collision(ref Asteroid asteroid)
+        {
+            if (asteroid.hitbox.Intersects(ship.hitbox))
+            {
+                if (ReallyIsColliding(asteroid.matrix, asteroid.texture.Width, asteroid.texture.Height, asteroid.colorArray,
+                                    ship.matrix, ship.texture.Width, ship.texture.Height, ship.colorArray))
+                {
+                    ship.life -= ship.life;
+                    asteroid.life -= asteroid.life;
+                }
+            }
+        }
+
+        private bool ReallyIsColliding(Matrix transformA, int widthA, int heightA, Color[] dataA,
                                      Matrix transformB, int widthB, int heightB, Color[] dataB)
         {
             Matrix transformAToB = transformA * Matrix.Invert(transformB);

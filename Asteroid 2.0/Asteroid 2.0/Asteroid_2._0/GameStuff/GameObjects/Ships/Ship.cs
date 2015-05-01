@@ -7,26 +7,40 @@ using System.Text;
 
 namespace Asteroid_2._0
 {
-    public abstract class Ship : GameObject
+    public class Ship : GameObject
     {
-        public enum Type 
-        {
-            mother,
-            father,
-        }
-
-        public Ship(Texture2D tex, Vector2 pos) :base(tex, pos) { }
-
+        public bool IsDead { get; set; }
         public float speedX { get; set; }
         public float speedY { get; set; }
-        public Type type { get; protected set; }
+
+        private Action powerUp { get; set; }
+
+        public Ship(Texture2D Texture, Vector2 Position)
+        {
+            Initialize(Texture, Position);
+
+            life = 3;
+        }
 
         public override void Update(GameTime gameTime)
         {
             speed = new Vector2(speedX, speedY);
+
             position += speed;
 
             base.Update(gameTime);
+        }
+
+        public void ActivatePowerUp(Action PowerUp)
+        {
+            powerUp = PowerUp;
+        }
+
+        public void UsePowerUp()
+        {
+            if (powerUp != null)
+                powerUp();
+            powerUp = null;
         }
     }
 }

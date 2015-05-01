@@ -26,7 +26,13 @@ namespace Asteroid_2._0
         public Texture2D bullet { get; private set; }
         public Texture2D laser { get; private set; }
 
+        public Texture2D powerup { get; private set; }
+
         public Texture2D cannon { get; private set; }
+
+        public Texture2D hud { get; private set; }
+
+        public Texture2D[] PowerUpTextures { get; private set; }
 
         #endregion
 
@@ -57,6 +63,8 @@ namespace Asteroid_2._0
 
             cannon = Content.Load<Texture2D>(@"Cannon");
 
+            hud = Content.Load<Texture2D>(@"HUD");
+
             RedFire = Content.Load<Texture2D>(@"RedFire");
             YellowFire = Content.Load<Texture2D>(@"YellowFire");
 
@@ -64,7 +72,21 @@ namespace Asteroid_2._0
 
             blankPic = Content.Load<Texture2D>(@"blank");
 
-            font = Content.Load<SpriteFont>(@"Spritefont");
+            font = Content.Load<SpriteFont>(@"spritefont");
+
+            PowerUpTextures = new Texture2D[] 
+            {
+                   Content.Load<Texture2D>(@"Power_Up1"),
+                   Content.Load<Texture2D>(@"Power_Up2"),
+                   Content.Load<Texture2D>(@"Power_Up3"),
+                   Content.Load<Texture2D>(@"Power_Up4"),
+                   Content.Load<Texture2D>(@"Power_Up5"),
+                   Content.Load<Texture2D>(@"Power_Up6"),
+                   Content.Load<Texture2D>(@"Power_Up7"),
+                   Content.Load<Texture2D>(@"Power_Up8"),
+                   Content.Load<Texture2D>(@"Power_Up9"),
+            };
+
         }
     }
 }

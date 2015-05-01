@@ -12,6 +12,7 @@ namespace Asteroid_2._0
         protected List<Projectile> projectiles { get; private set; }
         protected ExplosionManager explosions { get; private set; }
         protected List<Asteroid> asteroids { get; private set; }
+        protected List<PowerUp> powerups { get; private set; }
         protected TextureManager textures { get; private set; }
         protected int windowHeight { get; private set; }
         protected int windowWidth { get; private set; }
@@ -23,6 +24,7 @@ namespace Asteroid_2._0
         {
             asteroids = parent.Asteroids;
             projectiles = parent.Projectiles;
+            powerups = parent.PowerUps;
             ship = parent.Ship;
 
             hud = parent.HUD;
@@ -33,6 +35,12 @@ namespace Asteroid_2._0
             windowHeight = parent.WindowHeight;
 
             random = new Random();
+        }
+
+        public void GetViewPort(Viewport viewport)
+        {
+            windowWidth = viewport.Width;
+            windowHeight = viewport.Height;
         }
     }
 }
