@@ -42,7 +42,7 @@ namespace Asteroid_2._0
 
         private void ViewHighScore(object sender, EventArgs e)
         {
-
+            ScreenManager.AddScreen(new HighScoreMenu());
         }
 
         private void PlayAgain(object sender, EventArgs e)

@@ -13,7 +13,7 @@ namespace Asteroid_2._0
         public Texture2D texture { get; protected set; }
         public Vector2 origin { get; protected set; }
         public Vector2 position { get; protected set; }
-        protected Color color { get; set; }
+        public Color color { get; set; }
         protected float scale { get; set; }
         public float rotation { get; set; }
         protected SpriteEffects spriteEffects { get; set; }

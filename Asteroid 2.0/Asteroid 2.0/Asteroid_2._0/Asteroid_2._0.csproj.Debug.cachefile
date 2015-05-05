@@ -10,9 +10,6 @@ Content\Background.xnb
 Content\Cannon.xnb
 Content\Explosion.xnb
 Content\blank.xnb
-Content\spritefont.xnb
-Content\gamefont.xnb
-Content\menufont.xnb
 Content\HUD.xnb
 Content\Power_Up1.xnb
 Content\Power_Up2.xnb
@@ -23,6 +20,9 @@ Content\Power_Up6.xnb
 Content\Power_Up7.xnb
 Content\Power_Up8.xnb
 Content\Power_Up9.xnb
+Content\spritefont.xnb
+Content\gamefont.xnb
+Content\menufont.xnb
 Content\MenuMusic.xnb
 Content\GameMusic.xnb
 Content\MenuMusic.wma

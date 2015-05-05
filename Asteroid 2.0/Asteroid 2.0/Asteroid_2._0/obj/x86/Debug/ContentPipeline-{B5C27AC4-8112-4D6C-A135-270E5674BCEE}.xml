@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Asteroid.xnb</Output>
-      <Time>2015-04-30T16:09:18.882452+02:00</Time>
+      <Time>2015-05-03T11:39:39.0641003+02:00</Time>
     </Item>
     <Item>
       <Source>MotherShip.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\MotherShip.xnb</Output>
-      <Time>2015-04-30T15:44:01.2863837+02:00</Time>
+      <Time>2015-05-03T11:39:39.1751789+02:00</Time>
     </Item>
     <Item>
       <Source>Bullet.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Bullet.xnb</Output>
-      <Time>2015-04-29T14:24:33.7793325+02:00</Time>
+      <Time>2015-02-02T18:51:55.7384056+01:00</Time>
     </Item>
     <Item>
       <Source>FatherShip.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\FatherShip.xnb</Output>
-      <Time>2015-04-29T14:24:33.7823304+02:00</Time>
+      <Time>2015-01-16T21:43:49.705738+01:00</Time>
     </Item>
     <Item>
       <Source>RedFire.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\RedFire.xnb</Output>
-      <Time>2015-04-29T14:24:33.7843304+02:00</Time>
+      <Time>2015-01-16T22:09:29.5077166+01:00</Time>
     </Item>
     <Item>
       <Source>YellowFire.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\YellowFire.xnb</Output>
-      <Time>2015-04-29T14:24:33.7853302+02:00</Time>
+      <Time>2015-01-16T22:09:29.5037145+01:00</Time>
     </Item>
     <Item>
       <Source>Laser.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Laser.xnb</Output>
-      <Time>2015-04-29T14:24:33.7833301+02:00</Time>
+      <Time>2015-02-02T18:54:34.7893335+01:00</Time>
     </Item>
     <Item>
       <Source>gradient.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\gradient.xnb</Output>
-      <Time>2015-04-29T14:24:33.7863305+02:00</Time>
+      <Time>2015-01-29T11:20:48.3251094+01:00</Time>
     </Item>
     <Item>
       <Source>Background.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Background.xnb</Output>
-      <Time>2015-04-29T14:24:33.7793325+02:00</Time>
+      <Time>2015-02-02T08:23:05.6016387+01:00</Time>
     </Item>
     <Item>
       <Source>Cannon.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Cannon.xnb</Output>
-      <Time>2015-04-29T14:24:33.7803308+02:00</Time>
+      <Time>2015-02-02T13:05:07.7310525+01:00</Time>
     </Item>
     <Item>
       <Source>Explosion.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Explosion.xnb</Output>
-      <Time>2015-04-29T14:24:33.7813306+02:00</Time>
+      <Time>2015-02-19T19:35:20.4976043+01:00</Time>
     </Item>
     <Item>
       <Source>blank.png</Source>
@@ -107,34 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\blank.xnb</Output>
-      <Time>2015-04-29T14:24:33.7853302+02:00</Time>
-    </Item>
-    <Item>
-      <Source>spritefont.spritefont</Source>
-      <Name>spritefont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\spritefont.xnb</Output>
-      <Time>2015-04-29T18:50:16.9828236+02:00</Time>
-    </Item>
-    <Item>
-      <Source>gamefont.spritefont</Source>
-      <Name>gamefont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\gamefont.xnb</Output>
-      <Time>2015-04-29T14:24:33.7863305+02:00</Time>
-    </Item>
-    <Item>
-      <Source>menufont.spritefont</Source>
-      <Name>menufont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\menufont.xnb</Output>
-      <Time>2015-04-29T14:24:33.7873312+02:00</Time>
+      <Time>2015-02-20T08:54:02.4815295+01:00</Time>
     </Item>
     <Item>
       <Source>HUD.png</Source>
@@ -143,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\HUD.xnb</Output>
-      <Time>2015-04-29T18:57:23.7742645+02:00</Time>
+      <Time>2015-05-03T11:39:39.1421554+02:00</Time>
     </Item>
     <Item>
       <Source>Power_Up1.png</Source>
@@ -152,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Power_Up1.xnb</Output>
-      <Time>2015-04-29T21:46:42.1751963+02:00</Time>
+      <Time>2015-05-03T11:39:39.1821837+02:00</Time>
     </Item>
     <Item>
       <Source>Power_Up2.png</Source>
@@ -161,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Power_Up2.xnb</Output>
-      <Time>2015-04-29T21:46:59.6290716+02:00</Time>
+      <Time>2015-05-03T11:39:39.1821837+02:00</Time>
     </Item>
     <Item>
       <Source>Power_Up3.png</Source>
@@ -170,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Power_Up3.xnb</Output>
-      <Time>2015-04-29T21:47:05.1304837+02:00</Time>
+      <Time>2015-05-03T11:39:39.1821837+02:00</Time>
     </Item>
     <Item>
       <Source>Power_Up4.png</Source>
@@ -179,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Power_Up4.xnb</Output>
-      <Time>2015-04-29T21:47:10.3408817+02:00</Time>
+      <Time>2015-05-03T11:39:39.1831842+02:00</Time>
     </Item>
     <Item>
       <Source>Power_Up5.png</Source>
@@ -188,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Power_Up5.xnb</Output>
-      <Time>2015-04-29T21:47:16.0862675+02:00</Time>
+      <Time>2015-05-03T11:39:39.1831842+02:00</Time>
     </Item>
     <Item>
       <Source>Power_Up6.png</Source>
@@ -197,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Power_Up6.xnb</Output>
-      <Time>2015-04-29T21:47:20.5318218+02:00</Time>
+      <Time>2015-05-03T11:39:39.1841851+02:00</Time>
     </Item>
     <Item>
       <Source>Power_Up7.png</Source>
@@ -206,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Power_Up7.xnb</Output>
-      <Time>2015-04-29T21:47:24.0397144+02:00</Time>
+      <Time>2015-05-03T11:39:39.1841851+02:00</Time>
     </Item>
     <Item>
       <Source>Power_Up8.png</Source>
@@ -215,7 +188,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Power_Up8.xnb</Output>
-      <Time>2015-04-29T21:47:28.5819308+02:00</Time>
+      <Time>2015-05-03T11:39:39.1841851+02:00</Time>
     </Item>
     <Item>
       <Source>Power_Up9.png</Source>
@@ -224,7 +197,34 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\Power_Up9.xnb</Output>
-      <Time>2015-04-29T21:47:34.0083297+02:00</Time>
+      <Time>2015-05-03T11:39:39.1851856+02:00</Time>
+    </Item>
+    <Item>
+      <Source>spritefont.spritefont</Source>
+      <Name>spritefont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\spritefont.xnb</Output>
+      <Time>2015-05-03T11:39:39.1901893+02:00</Time>
+    </Item>
+    <Item>
+      <Source>gamefont.spritefont</Source>
+      <Name>gamefont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\gamefont.xnb</Output>
+      <Time>2015-01-29T11:20:48.3311141+01:00</Time>
+    </Item>
+    <Item>
+      <Source>menufont.spritefont</Source>
+      <Name>menufont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\menufont.xnb</Output>
+      <Time>2015-01-29T11:20:48.3271109+01:00</Time>
     </Item>
     <Item>
       <Source>MenuMusic.mp3</Source>
@@ -234,7 +234,7 @@
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\MenuMusic.xnb</Output>
       <Extra>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\MenuMusic.wma</Extra>
-      <Time>2015-04-29T22:32:25.0401697+02:00</Time>
+      <Time>2015-05-03T11:39:39.1741784+02:00</Time>
     </Item>
     <Item>
       <Source>GameMusic.mp3</Source>
@@ -244,7 +244,7 @@
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\GameMusic.xnb</Output>
       <Extra>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\GameMusic.wma</Extra>
-      <Time>2015-04-29T22:33:32.1580124+02:00</Time>
+      <Time>2015-05-03T11:39:39.1411549+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -261,31 +261,31 @@
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2011-09-01T16:22:30+02:00</Value>
+        <Value>2011-09-01T17:22:30+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2011-09-01T16:22:30+02:00</Value>
+        <Value>2011-09-01T17:22:30+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2011-09-01T16:22:30+02:00</Value>
+        <Value>2011-09-01T17:22:30+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2011-09-01T16:22:30+02:00</Value>
+        <Value>2011-09-01T17:22:30+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2011-09-01T16:22:30+02:00</Value>
+        <Value>2011-09-01T17:22:30+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2011-09-01T16:22:30+02:00</Value>
+        <Value>2011-09-01T17:22:30+02:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-04-29T01:38:47.9950218+02:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-12-24T22:00:16.3800273+01:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

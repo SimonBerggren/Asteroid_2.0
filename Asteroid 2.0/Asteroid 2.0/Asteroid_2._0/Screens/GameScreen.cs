@@ -13,6 +13,8 @@ namespace Asteroid_2._0
     public delegate void GameOver(string WonOrLost);
     public class GameScreen : Screen
     {
+        public NewHighScore highScore;
+
         public int WindowWidth { get; private set; }
 
         public int WindowHeight { get; private set; }
@@ -34,6 +36,8 @@ namespace Asteroid_2._0
             factory = new Factory();
 
             factory.Initialize(this);
+
+            highScore = new NewHighScore();
 
             MediaPlayer.Play(Sound.GameMusic);
         }
@@ -67,6 +71,7 @@ namespace Asteroid_2._0
         {
             IsExiting = true;
             ScreenManager.AddScreen(new GameOverMenu(WonOrLost, factory.HUD.killCount));
+            highScore.CheckHighScore(factory.HUD.killCount);
         }
     }
 }

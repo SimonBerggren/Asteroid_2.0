@@ -1,4 +1,4 @@
-Simon: 104
-Tobias: 102
-Sandra: 1338
-Yvonne: 1337
+Simon: 1
+Tobias: 2
+Sandra: 4
+Yvonne: 3

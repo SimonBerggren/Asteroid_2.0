@@ -13,18 +13,20 @@ namespace Asteroid_2._0
         float WaitForRespawn;
         float ResetRespawn;
 
-
         public GameOverManager(Factory parent)
         {
             Initialize(parent);
-
             WaitForRespawn = ResetRespawn = 2;
+
         }
 
         public void Update(GameTime gameTime)
         {
             if (ship.IsDead)
+            {
                 WaitForRespawn -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+                RemoveAsteroids();
+            }
 
             if (WaitForRespawn <= 0)
             {
@@ -40,9 +42,17 @@ namespace Asteroid_2._0
         {
             ship.Respawn();
             asteroidTimer = new Timer(2000);
-            asteroids.Clear();
             projectiles.Clear();
+            asteroids.Clear();
             powerups.Clear();
+        }
+
+        void RemoveAsteroids()
+        {
+            for (int i = 0; i < asteroids.Count; i++)
+            {
+                asteroids[i].color *= 0.9f;
+            }
         }
     }
 }
