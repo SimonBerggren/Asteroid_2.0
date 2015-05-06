@@ -96,5 +96,3 @@ C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\
 C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\GameMusic.xnb
 C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\MenuMusic.wma
 C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\GameMusic.wma
-C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Asteroid_2._0.csproj.GenerateResource.Cache
-C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\obj\x86\Debug\Asteroid_2._0.NewHighScore.resources
