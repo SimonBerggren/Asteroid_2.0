@@ -14,6 +14,10 @@ namespace Asteroid_2._0
         private static Point mousePoint;
         private static Vector2 mousePosition;
 
+        private static KeyboardState writingKS, writingOldKS;
+
+        private static string[] pressedKeys;
+
         public static void Update()
         {
             oldKS = KS;

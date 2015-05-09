@@ -20,7 +20,7 @@ namespace Asteroid_2._0
         public override void LoadContent()
         {
             GetHighScores();
-            AddHighScores();
+            ShowHighScores();
             
             MenuEntry back = new MenuEntry("Back");
 
@@ -42,10 +42,12 @@ namespace Asteroid_2._0
                 highScores.Add(new Highscore(s[0], int.Parse(s[1])));
             }
 
+            reader.Close();
+
             highScores = highScores.OrderByDescending(s => s.score).ToList();
         }
 
-        private void AddHighScores()
+        private void ShowHighScores()
         {
             for (int i = 0; i < highScores.Count; i++)
             {

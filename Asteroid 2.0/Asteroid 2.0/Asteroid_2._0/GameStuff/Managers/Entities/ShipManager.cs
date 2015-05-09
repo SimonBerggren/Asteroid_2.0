@@ -34,6 +34,7 @@ namespace Asteroid_2._0
 
             if (!ableToFire)
                 timer -= 0.1f;
+
             if (timer <= 0)
             {
                 timer = resettimer;
@@ -52,8 +53,17 @@ namespace Asteroid_2._0
             ship.rotation = (float)Math.Atan2(yDiff, xDiff);
             float distance = Vector2.Distance(ship.position, Input.MousePosition());
 
-            ship.speedX = facingDirection.X * (distance / 50);
-            ship.speedY = facingDirection.Y * (distance / 50);
+            float speed;
+
+            if(Input.Holding(Keys.Space))
+                speed = 10;
+            else
+                speed = 1;
+
+            ship.speedX = facingDirection.X * (distance / 500) * speed;
+            ship.speedY = facingDirection.Y * (distance / 500) * speed;
+
+
         }
 
         private void Manage_Fire()
