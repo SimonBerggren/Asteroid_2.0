@@ -67,9 +67,6 @@
     <Reference Include="mscorlib" />
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -91,8 +88,7 @@
     <Compile Include="GameStuff\Managers\GameManaging\Input.cs" />
     <Compile Include="Menus\GameOver\GameOverMenu.cs" />
     <Compile Include="Menus\GameOver\LoseMenu.cs" />
-    <Compile Include="GameStuff\Managers\Entities\HighScore.cs" />
-    <Compile Include="Menus\GameOver\NewHighScoreMenu.cs" />
+    <Compile Include="Menus\HighScore.cs" />
     <Compile Include="Menus\HighScoreMenu.cs" />
     <Compile Include="Menus\Options\Sound\MusicVolumeControl.cs" />
     <Compile Include="Menus\Options\Sound\SoundControlMenu.cs" />
@@ -160,6 +156,7 @@
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <!--
