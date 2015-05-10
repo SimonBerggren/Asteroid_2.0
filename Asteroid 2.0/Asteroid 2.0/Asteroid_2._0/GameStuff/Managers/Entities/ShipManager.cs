@@ -70,13 +70,13 @@ namespace Asteroid_2._0
         {
             if (Input.HoldingLeft())
             {
-                projectiles.Add(new Bullet(textures.bullet, ship.position));
+                projectiles.Add(new Bullet(Textures.bullet, ship.position));
                 ableToFire = false;
             }
 
             if (Input.HoldingRight())
             {
-                projectiles.Add(new Bullet(textures.bullet, ship.position, true));
+                projectiles.Add(new Bullet(Textures.bullet, ship.position, true));
                 ableToFire = false;
             }
 
@@ -105,7 +105,7 @@ namespace Asteroid_2._0
 
             if (ClosestAsteroid.IsTargeted == false)
             {
-                projectiles.Add(new Missile(textures.laser, ship.position, ref ClosestAsteroid));
+                projectiles.Add(new Missile(Textures.laser, ship.position, ref ClosestAsteroid));
                 ClosestAsteroid.IsTargeted = true;
             }
             else

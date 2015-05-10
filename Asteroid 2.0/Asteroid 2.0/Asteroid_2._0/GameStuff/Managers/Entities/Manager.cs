@@ -14,7 +14,6 @@ namespace Asteroid_2._0
         protected ExplosionManager explosions { get; private set; }
         protected List<Asteroid> asteroids { get; private set; }
         protected List<PowerUp> powerups { get; private set; }
-        protected TextureManager textures { get; private set; }
         protected int windowHeight { get; private set; }
         protected int windowWidth { get; private set; }
         protected Random random { get; private set; }
@@ -33,7 +32,6 @@ namespace Asteroid_2._0
             ship = parent.Ship;
 
             hud = parent.HUD;
-            textures = parent.Textures;
             explosions = parent.Explosions;
 
             windowWidth = parent.WindowWidth;

@@ -14,7 +14,6 @@ namespace Asteroid_2._0
         public List<Projectile> Projectiles { get; private set; }
         public List<Asteroid> Asteroids { get; private set; }
         public List<PowerUp> PowerUps { get; private set; }
-        public TextureManager Textures { get; private set; }
         public ExplosionManager Explosions { get; private set; }
         public HUD HUD { get; private set; }
         public GameOver GameOver { get; private set; }
@@ -36,8 +35,6 @@ namespace Asteroid_2._0
         {
             WindowWidth = parent.WindowWidth;
             WindowHeight = parent.WindowHeight;
-
-            Textures = new TextureManager(parent.ScreenManager.Game);
 
             GameOver = new GameOver(parent.Game_Over);
             Ship = new Ship(Textures.mothership, new Vector2(WindowWidth - Textures.mothership.Width / 2,

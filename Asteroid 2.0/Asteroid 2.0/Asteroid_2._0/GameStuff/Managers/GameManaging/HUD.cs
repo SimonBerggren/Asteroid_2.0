@@ -21,8 +21,8 @@ namespace Asteroid_2._0
 
         public HUD(Factory parent)
         {
-            texture = parent.Textures.hud;
-            font = parent.Textures.font;
+            texture = Textures.hud;
+            font = Textures.font;
 
             player = parent.Ship;
         }

@@ -52,7 +52,7 @@ namespace Asteroid_2._0
 
         private void SpawnPowerUp()
         {
-            powerups.Add(new PowerUp(textures.PowerUpTextures[random.Next(textures.PowerUpTextures.Length)], new Vector2(random.Next(50, windowWidth - 50), 50), random.Next(-5, 5), random.Next(1, 5), random.Next(5)));
+            powerups.Add(new PowerUp(Textures.PowerUpTextures[random.Next(Textures.PowerUpTextures.Length)], new Vector2(random.Next(50, windowWidth - 50), 50), random.Next(-5, 5), random.Next(1, 5), random.Next(5)));
         }
 
         public void MassiveExplosion()
@@ -64,7 +64,7 @@ namespace Asteroid_2._0
                     3f * (float)(random.NextDouble() * 2 - 1));
                 velocity = Vector2.Normalize(velocity) * (float)(random.NextDouble() * 3);
 
-                projectiles.Add(new Bullet(textures.bullet, ship.position, false, velocity));
+                projectiles.Add(new Bullet(Textures.bullet, ship.position, false, velocity));
             }
         }
     }

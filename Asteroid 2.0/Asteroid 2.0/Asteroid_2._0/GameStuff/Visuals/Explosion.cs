@@ -62,7 +62,7 @@ namespace Asteroid_2._0
 
         public ExplosionManager(Factory Factory)
         {
-            texture = Factory.Textures.ExplosionSheet;
+            texture = Textures.ExplosionSheet;
             explosions = new List<Explosion>();
         }
 

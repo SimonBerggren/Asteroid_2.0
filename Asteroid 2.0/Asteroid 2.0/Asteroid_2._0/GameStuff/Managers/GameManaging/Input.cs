@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
@@ -16,18 +17,64 @@ namespace Asteroid_2._0
 
         private static KeyboardState writingKS, writingOldKS;
 
-        private static string[] pressedKeys;
+        private static Keys[] pressedKeys;
 
         public static void Update()
         {
             oldKS = KS;
             oldMS = MS;
+
             mousePoint.X = Mouse.GetState().X;
             mousePoint.Y = Mouse.GetState().Y;
             mousePosition.X = Mouse.GetState().X;
             mousePosition.Y = Mouse.GetState().Y;
+
+            pressedKeys = Keyboard.GetState().GetPressedKeys();
+
             MS = Mouse.GetState();
             KS = Keyboard.GetState();
+        }
+
+        public static Keys[] PressedKeys()
+        {
+            int lastKeyPressed = pressedKeys.Length - 1;
+
+            //if(pressedKeys[lastKeyPressed] = "retun")
+
+
+
+            return pressedKeys;
+        }
+
+        public static void DrawPressedKeys(SpriteBatch spriteBatch, Vector2 Position)
+        {
+            if (pressedKeys == null)
+                return;
+
+            Keys lastKey;
+            Keys currKey;
+
+            try
+            {
+                for (int i = 0; i < pressedKeys.Length; i++)
+                {
+                    if (pressedKeys.Length > 1)
+                    {
+                        lastKey = pressedKeys[i--];
+                        spriteBatch.DrawString(Textures.font, pressedKeys[i].ToString(), new Vector2(Position.X + Textures.font.MeasureString(lastKey.ToString()).X, Position.Y), Color.White);
+
+                    }
+                    else
+                    {
+                        currKey = pressedKeys[i];
+                        spriteBatch.DrawString(Textures.font, pressedKeys[i].ToString(), new Vector2(Position.X + Textures.font.MeasureString(currKey.ToString()).X, Position.Y), Color.White);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
         }
 
         public static bool LeftClick()

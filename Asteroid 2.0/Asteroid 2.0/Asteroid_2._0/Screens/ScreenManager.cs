@@ -54,6 +54,7 @@ namespace Asteroid_2._0
             spriteBatch = new SpriteBatch(GraphicsDevice);
             font = Content.Load<SpriteFont>(@"menufont");
             Sound.LoadContent(Content);
+            Textures.LoadContent(Game);
 
             foreach (Screen screen in screens)
             {

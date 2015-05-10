@@ -8,47 +8,42 @@ using System.Text;
 
 namespace Asteroid_2._0
 {
-    public class TextureManager
+    public static class Textures
     {
-        public TextureManager(Game Game)
-        {
-            Initialize(Game);
-        }
-
         #region Game Textures
 
-        public Texture2D asteroid { get; private set; }
+        public static Texture2D asteroid { get; private set; }
 
-        public Texture2D mothership { get; private set; }
-        public Texture2D fathership { get; private set; }
+        public static Texture2D mothership { get; private set; }
+        public static Texture2D fathership { get; private set; }
 
-        public Texture2D bullet { get; private set; }
-        public Texture2D laser { get; private set; }
+        public static Texture2D bullet { get; private set; }
+        public static Texture2D laser { get; private set; }
 
-        public Texture2D powerup { get; private set; }
+        public static Texture2D powerup { get; private set; }
 
-        public Texture2D cannon { get; private set; }
+        public static Texture2D cannon { get; private set; }
 
-        public Texture2D hud { get; private set; }
+        public static Texture2D hud { get; private set; }
 
-        public Texture2D[] PowerUpTextures { get; private set; }
+        public static Texture2D[] PowerUpTextures { get; private set; }
 
         #endregion
 
         #region Particles
 
-        public Texture2D YellowFire { get; private set; }
-        public Texture2D RedFire { get; private set; }
+        public static Texture2D YellowFire { get; private set; }
+        public static Texture2D RedFire { get; private set; }
 
-        public Texture2D ExplosionSheet { get; private set; }
+        public static Texture2D ExplosionSheet { get; private set; }
 
-        public Texture2D blankPic { get; private set; }
+        public static Texture2D blankPic { get; private set; }
 
-        public SpriteFont font { get; private set; }
+        public static SpriteFont font { get; private set; }
 
         #endregion
 
-        private void Initialize(Game Game)
+        public static void LoadContent(Game Game)
         {
             ContentManager Content = new ContentManager(Game.Services, Game.Content.RootDirectory);
 
@@ -71,7 +66,7 @@ namespace Asteroid_2._0
 
             blankPic = Content.Load<Texture2D>(@"blank");
 
-            font = Content.Load<SpriteFont>(@"spritefont");
+            font = Content.Load<SpriteFont>(@"menufont");
 
             PowerUpTextures = new Texture2D[] 
             {

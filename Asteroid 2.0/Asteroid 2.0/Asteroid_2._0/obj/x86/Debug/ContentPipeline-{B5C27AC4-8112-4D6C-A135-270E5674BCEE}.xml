@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\blank.xnb</Output>
-      <Time>2015-02-20T08:54:02.4815295+01:00</Time>
+      <Time>2015-05-07T11:30:42.3438649+02:00</Time>
     </Item>
     <Item>
       <Source>HUD.png</Source>
@@ -224,7 +224,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Simon\Desktop\Asteroid_2.0\Asteroid 2.0\Asteroid 2.0\Asteroid_2._0\bin\x86\Debug\Content\menufont.xnb</Output>
-      <Time>2015-01-29T11:20:48.3271109+01:00</Time>
+      <Time>2015-05-10T21:19:12.345625+02:00</Time>
     </Item>
     <Item>
       <Source>MenuMusic.mp3</Source>

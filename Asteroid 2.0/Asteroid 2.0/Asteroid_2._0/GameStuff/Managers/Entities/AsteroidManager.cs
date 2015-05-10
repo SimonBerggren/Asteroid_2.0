@@ -63,9 +63,9 @@ namespace Asteroid_2._0
         private void SpawnAsteroid(Object source, ElapsedEventArgs e)
         {
             if (asteroidSpawnCount == 5 || asteroidSpawnCount == 10 || asteroidSpawnCount == 15 || asteroidSpawnCount == 20)
-            asteroids.Add(new Asteroid(textures.asteroid, new Vector2(random.Next(50, windowWidth - 50), 50), random.Next(-5, 5), random.Next(1, 5), random.Next(5), Type.Big));
+            asteroids.Add(new Asteroid(Textures.asteroid, new Vector2(random.Next(50, windowWidth - 50), 50), random.Next(-5, 5), random.Next(1, 5), random.Next(5), Type.Big));
             else
-                asteroids.Add(new Asteroid(textures.asteroid, new Vector2(random.Next(50, windowWidth - 50), 50), random.Next(-5, 5), random.Next(1, 5), random.Next(5), Type.Normal));
+                asteroids.Add(new Asteroid(Textures.asteroid, new Vector2(random.Next(50, windowWidth - 50), 50), random.Next(-5, 5), random.Next(1, 5), random.Next(5), Type.Normal));
 
             asteroidSpawnCount++;
         }
@@ -75,7 +75,7 @@ namespace Asteroid_2._0
 
             for (int i = 0; i < 5; i++)
             {
-                asteroids.Add(new Asteroid(textures.asteroid, Position, random.Next(-5, 5), random.Next(1, 5), random.Next(5), Type.Normal));
+                asteroids.Add(new Asteroid(Textures.asteroid, Position, random.Next(-5, 5), random.Next(1, 5), random.Next(5), Type.Normal));
             }
         }
 
