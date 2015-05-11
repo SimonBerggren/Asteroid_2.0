@@ -11,10 +11,6 @@ namespace Asteroid_2._0
 {
     class NewHighScoreMenu : MenuScreen
     {
-        bool Clicked = false;
-
-        Keys[] keysPressed;
-
         Texture2D texture;
 
         MenuEntry back;
@@ -23,16 +19,8 @@ namespace Asteroid_2._0
             : base("Write your name")
         {
 
-            
+
         }
-
-        public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
-        {
-            keysPressed = Input.PressedKeys();
-
-            base.Update(gameTime, otherScreenHasFocus, coveredByOtherScreen);
-        }
-
 
         public override void LoadContent()
         {
@@ -52,15 +40,19 @@ namespace Asteroid_2._0
 
         private void EventInput_CharEntered(object sender, EventInput.CharacterEventArgs e)
         {
-            text += e.Character;
+            if (e.Character == '\b')
+            {
+                if (text.Length > 0)
+                    text = text.Remove(text.Length - 1);
+            }
+            else
+                text += e.Character;
         }
 
         void GoBack(object sender, EventArgs e)
         {
             IsExiting = true;
         }
-
-
 
         private Color color = new Color(0, 0, 0, 0);
         private Rectangle fadingRect;
@@ -76,10 +68,10 @@ namespace Asteroid_2._0
 
             ScreenManager.SpriteBatch.Begin();
             ScreenManager.SpriteBatch.Draw(texture, fadingRect, color);
-            ScreenManager.SpriteBatch.DrawString(Textures.font, text, Vector2.Zero, Color.White );
+            ScreenManager.SpriteBatch.DrawString(Textures.font, text, Vector2.Zero, Color.White);
             ScreenManager.SpriteBatch.End();
 
-            base.Draw(gameTime); 
+            base.Draw(gameTime);
         }
     }
 }

@@ -88,6 +88,7 @@
     <Compile Include="GameStuff\Managers\GameManaging\Input.cs" />
     <Compile Include="Menus\GameOver\GameOverMenu.cs" />
     <Compile Include="Menus\GameOver\LoseMenu.cs" />
+    <Compile Include="Menus\GameOver\NewHighScoreMenu.cs" />
     <Compile Include="Menus\HighScore.cs" />
     <Compile Include="Menus\HighScoreMenu.cs" />
     <Compile Include="Menus\Options\Sound\MusicVolumeControl.cs" />
