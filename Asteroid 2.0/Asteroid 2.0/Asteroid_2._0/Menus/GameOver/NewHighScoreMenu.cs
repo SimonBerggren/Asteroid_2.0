@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
+using System.IO;
 
 namespace Asteroid_2._0
 {
@@ -15,10 +16,12 @@ namespace Asteroid_2._0
 
         MenuEntry back;
 
-        public NewHighScoreMenu()
+        private int score;
+
+        public NewHighScoreMenu(int Score = 1000)
             : base("Write your name")
         {
-
+            score = Score;
 
         }
 
@@ -42,36 +45,58 @@ namespace Asteroid_2._0
         {
             if (e.Character == '\b')
             {
-                if (text.Length > 0)
-                    text = text.Remove(text.Length - 1);
+                if (nameText.Length > 0)
+                    nameText = nameText.Remove(nameText.Length - 1);
+            }
+            else if (e.Character == (char)13)
+            {
+                // pressed Enter
+                return;
             }
             else
-                text += e.Character;
+                nameText += e.Character;
+
+        }
+
+        void WriteToHighScore()
+        {
+            StreamWriter writer = new StreamWriter("HighScores.txt", true);
+
+            string textToWrite = nameText + ':' + Convert.ToString(score);
+
+            writer.WriteLine(textToWrite);
+
+            writer.Close();
         }
 
         void GoBack(object sender, EventArgs e)
         {
+            WriteToHighScore();
+
+            ScreenManager.AddScreen(new HighScoreMenu());
+
             IsExiting = true;
         }
 
-        private Color color = new Color(0, 0, 0, 0);
-        private Rectangle fadingRect;
-        private string text = "";
+        private string nameText = "";
 
         public override void Draw(GameTime gameTime)
         {
-            fadingRect = new Rectangle(0, 0, ScreenManager.SpriteBatch.GraphicsDevice.Viewport.Width,
-                                           ScreenManager.SpriteBatch.GraphicsDevice.Viewport.Height);
-
-            color *= 1.1f;
-
-
-            ScreenManager.SpriteBatch.Begin();
-            ScreenManager.SpriteBatch.Draw(texture, fadingRect, color);
-            ScreenManager.SpriteBatch.DrawString(Textures.font, text, Vector2.Zero, Color.White);
-            ScreenManager.SpriteBatch.End();
-
             base.Draw(gameTime);
+            if (ScreenState != ScreenState.Active || string.IsNullOrWhiteSpace(nameText))
+                return;
+
+            SpriteBatch spriteBatch = ScreenManager.SpriteBatch;
+
+            Vector2 textPos = new Vector2(spriteBatch.GraphicsDevice.Viewport.Width / 2 - Textures.font.MeasureString(nameText).X / 2,
+                                          spriteBatch.GraphicsDevice.Viewport.Height / 2 - Textures.font.MeasureString(nameText).Y);
+
+            spriteBatch.Begin();
+
+            spriteBatch.DrawString(Textures.font, nameText, textPos, Color.White);
+
+            spriteBatch.End();
+
         }
     }
 }

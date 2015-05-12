@@ -13,7 +13,6 @@ namespace Asteroid_2._0
         float WaitForRespawn;
         float ResetRespawn;
 
-
         public GameOverManager(Factory parent)
         {
             Initialize(parent);

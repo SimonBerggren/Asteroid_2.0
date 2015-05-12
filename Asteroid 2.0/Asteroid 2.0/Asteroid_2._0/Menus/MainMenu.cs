@@ -33,7 +33,7 @@ namespace Asteroid_2._0
 
         void HighScores(object sender, EventArgs e)
         {
-            ScreenManager.AddScreen(new NewHighScoreMenu());
+            ScreenManager.AddScreen(new HighScoreMenu());
         }
 
         void OptionsSelected(object sender, EventArgs e)

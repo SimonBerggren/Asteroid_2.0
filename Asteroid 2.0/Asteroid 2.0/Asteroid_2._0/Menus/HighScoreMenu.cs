@@ -45,6 +45,9 @@ namespace Asteroid_2._0
             reader.Close();
 
             highScores = highScores.OrderByDescending(s => s.score).ToList();
+
+            while (highScores.Count > 3)
+                highScores.RemoveAt(highScores.Count - 1);
         }
 
         private void ShowHighScores()

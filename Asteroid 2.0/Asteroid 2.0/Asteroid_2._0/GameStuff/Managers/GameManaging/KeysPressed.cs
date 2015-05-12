@@ -151,11 +151,7 @@ namespace EventInput
                 case WM_KEYDOWN:
                     if (KeyDown != null)
                     {
-
-                        if ((Keys)wParam == Keys.Back)
-                            Console.WriteLine("BackSpace");
-                        else
-                            KeyDown(null, new KeyEventArgs((Keys)wParam));
+                        KeyDown(null, new KeyEventArgs((Keys)wParam));
                     }
                     break;
 

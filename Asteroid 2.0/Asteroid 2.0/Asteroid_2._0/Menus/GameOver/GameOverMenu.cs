@@ -13,10 +13,7 @@ namespace Asteroid_2._0
         MenuEntry back;
 
         public GameOverMenu(string WonOrLost, int Score)
-            : base("You " + WonOrLost + "!\nYour Score: " + Score.ToString())
-        {
-
-        }
+            : base("You " + WonOrLost + "!\nYour Score: " + Score.ToString()) { }
 
         public override void LoadContent()
         {

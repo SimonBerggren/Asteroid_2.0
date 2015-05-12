@@ -55,15 +55,13 @@ namespace Asteroid_2._0
 
             float speed;
 
-            if(Input.Holding(Keys.Space))
+            if (Input.Holding(Keys.Space))
                 speed = 10;
             else
                 speed = 1;
 
             ship.speedX = facingDirection.X * (distance / 500) * speed;
             ship.speedY = facingDirection.Y * (distance / 500) * speed;
-
-
         }
 
         private void Manage_Fire()
@@ -80,18 +78,21 @@ namespace Asteroid_2._0
                 ableToFire = false;
             }
 
-            if (Input.Clicked(Keys.Space))
+            if (Input.Clicked(Keys.L))
                 Fire_Missile();
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            if(!ship.IsDead)
-            ship.Draw(spriteBatch);
+            if (!ship.IsDead)
+                ship.Draw(spriteBatch);
         }
 
         private void Fire_Missile()
         {
+
+        Try:
+
             if (asteroids.Count <= 0)
                 return;
 
@@ -108,8 +109,10 @@ namespace Asteroid_2._0
                 projectiles.Add(new Missile(Textures.laser, ship.position, ref ClosestAsteroid));
                 ClosestAsteroid.IsTargeted = true;
             }
-            else
+            else if (asteroids.Count <= 0 || ClosestAsteroid.IsTargeted == true)
                 return;
+            else
+                goto Try;
         }
     }
 }
