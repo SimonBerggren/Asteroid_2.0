@@ -38,7 +38,6 @@ namespace Asteroid_2._0
         private void Reset()
         {
             ship.Respawn();
-            asteroidTimer = new Timer(2000);
             asteroids.Clear();
             projectiles.Clear();
             powerups.Clear();

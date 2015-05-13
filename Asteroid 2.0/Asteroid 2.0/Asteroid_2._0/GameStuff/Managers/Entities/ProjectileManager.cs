@@ -12,6 +12,8 @@ namespace Asteroid_2._0
         public ProjectileManager(Factory parent)
         {
             Initialize(parent);
+
+
         }
 
         public void Update(GameTime gameTime)

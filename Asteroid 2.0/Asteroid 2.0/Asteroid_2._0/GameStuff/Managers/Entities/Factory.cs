@@ -58,8 +58,6 @@ namespace Asteroid_2._0
 
         public void UpdateGameScreen(GameTime gameTime, bool otherScreenHasFocus)
         {
-            Asteroid_Manager.HandleTime(otherScreenHasFocus);
-
             if (otherScreenHasFocus)
                 return;
 

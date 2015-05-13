@@ -74,6 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameStuff\GameObjects\PowerUp\PowerUp.cs" />
+    <Compile Include="GameStuff\GameObjects\PowerUp\Power_Explosion.cs" />
+    <Compile Include="GameStuff\GameObjects\PowerUp\Power_Missile.cs" />
+    <Compile Include="GameStuff\GameObjects\PowerUp\Power_Speed.cs" />
     <Compile Include="GameStuff\GameObjects\Projectiles\Missile.cs" />
     <Compile Include="GameStuff\Managers\Entities\Factory.cs" />
     <Compile Include="GameStuff\Managers\Entities\GameOverManager.cs" />

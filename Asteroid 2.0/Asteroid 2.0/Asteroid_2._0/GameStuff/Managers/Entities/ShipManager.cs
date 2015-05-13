@@ -18,6 +18,8 @@ namespace Asteroid_2._0
             Initialize(parent);
             timer = 1f;
             resettimer = 1f;
+
+
         }
 
         public void Update(GameTime gameTime)
@@ -30,7 +32,7 @@ namespace Asteroid_2._0
             Manage_Movement();
 
             if (ableToFire)
-                Manage_Fire();
+                Manage_Input();
 
             if (!ableToFire)
                 timer -= 0.1f;
@@ -64,7 +66,7 @@ namespace Asteroid_2._0
             ship.speedY = facingDirection.Y * (distance / 500) * speed;
         }
 
-        private void Manage_Fire()
+        private void Manage_Input()
         {
             if (Input.HoldingLeft())
             {
@@ -78,8 +80,14 @@ namespace Asteroid_2._0
                 ableToFire = false;
             }
 
-            if (Input.Clicked(Keys.L))
-                Fire_Missile();
+            if (Input.Clicked(Keys.D1))
+                ship.ShootMissile();
+
+            if (Input.Clicked(Keys.D2))
+                ship.BoostSpeed();
+
+            if (Input.Clicked(Keys.D3))
+                ship.Explode();
         }
 
         public void Draw(SpriteBatch spriteBatch)
@@ -88,31 +96,6 @@ namespace Asteroid_2._0
                 ship.Draw(spriteBatch);
         }
 
-        private void Fire_Missile()
-        {
 
-        Try:
-
-            if (asteroids.Count <= 0)
-                return;
-
-            List<Asteroid> TempList = asteroids;
-
-            TempList.OrderBy<Asteroid, bool>
-                (asteroid => asteroid.IsTargeted).ToList<Asteroid>();
-
-            Asteroid ClosestAsteroid = TempList.OrderBy<Asteroid, float>
-                (asteroid => Vector2.Distance(asteroid.position, Input.MousePosition())).ToList<Asteroid>()[0];
-
-            if (ClosestAsteroid.IsTargeted == false)
-            {
-                projectiles.Add(new Missile(Textures.laser, ship.position, ref ClosestAsteroid));
-                ClosestAsteroid.IsTargeted = true;
-            }
-            else if (asteroids.Count <= 0 || ClosestAsteroid.IsTargeted == true)
-                return;
-            else
-                goto Try;
-        }
     }
 }

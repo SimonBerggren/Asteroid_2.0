@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Asteroid_2._0
 {
-    public class PowerUp : GameObject
+    public abstract class PowerUp : GameObject
     {
         private float rotationSpeed;
 
@@ -26,5 +26,7 @@ namespace Asteroid_2._0
             position += speed;
             base.Update(gameTime);
         }
+
+        public abstract void ActivatePowerUp(Ship ship);
     }
 }

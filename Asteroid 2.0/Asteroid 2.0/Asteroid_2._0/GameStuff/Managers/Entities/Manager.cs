@@ -21,9 +21,6 @@ namespace Asteroid_2._0
         protected HUD hud { get; private set; }
         protected GameOver gameOver { get; private set; }
 
-        protected Timer difficultyTimer;
-        protected Timer asteroidTimer;
-
         protected void Initialize(Factory parent)
         {
             asteroids = parent.Asteroids;
@@ -40,8 +37,6 @@ namespace Asteroid_2._0
             gameOver = parent.GameOver;
 
             random = new Random();
-            difficultyTimer = new Timer(5000);
-            asteroidTimer = new Timer(2000);
         }
 
         public void GetViewPort(Viewport viewport)
